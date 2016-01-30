@@ -12,6 +12,10 @@
 		8A31C78D1C48BCE000FF9820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A31C78B1C48BCE000FF9820 /* Main.storyboard */; };
 		8A31C78F1C48BCE000FF9820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A31C78E1C48BCE000FF9820 /* Assets.xcassets */; };
 		8A31C7921C48BCE000FF9820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A31C7901C48BCE000FF9820 /* LaunchScreen.storyboard */; };
+		8A31C79A1C48BD1A00FF9820 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A31C7991C48BD1A00FF9820 /* CurrentWeather.plist */; };
+		8A31C79C1C49AACF00FF9820 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A31C79B1C49AACF00FF9820 /* CurrentWeather.swift */; };
+		8A31C79E1C4E098000FF9820 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A31C79D1C4E098000FF9820 /* NetworkOperation.swift */; };
+		8A4D6C4A1C59CF2B00F86325 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4D6C491C59CF2B00F86325 /* ForecastService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		8A31C78E1C48BCE000FF9820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A31C7911C48BCE000FF9820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A31C7931C48BCE000FF9820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A31C7991C48BD1A00FF9820 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
+		8A31C79B1C49AACF00FF9820 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentWeather.swift; path = ../CurrentWeather.swift; sourceTree = "<group>"; };
+		8A31C79D1C4E098000FF9820 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		8A4D6C491C59CF2B00F86325 /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,13 @@
 			children = (
 				8A31C7871C48BCE000FF9820 /* AppDelegate.swift */,
 				8A31C7891C48BCE000FF9820 /* ViewController.swift */,
+				8A31C79B1C49AACF00FF9820 /* CurrentWeather.swift */,
+				8A31C79D1C4E098000FF9820 /* NetworkOperation.swift */,
+				8A4D6C491C59CF2B00F86325 /* ForecastService.swift */,
 				8A31C78B1C48BCE000FF9820 /* Main.storyboard */,
 				8A31C78E1C48BCE000FF9820 /* Assets.xcassets */,
 				8A31C7901C48BCE000FF9820 /* LaunchScreen.storyboard */,
+				8A31C7991C48BD1A00FF9820 /* CurrentWeather.plist */,
 				8A31C7931C48BCE000FF9820 /* Info.plist */,
 			);
 			path = WeatherApp;
@@ -123,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A31C7921C48BCE000FF9820 /* LaunchScreen.storyboard in Resources */,
+				8A31C79A1C48BD1A00FF9820 /* CurrentWeather.plist in Resources */,
 				8A31C78F1C48BCE000FF9820 /* Assets.xcassets in Resources */,
 				8A31C78D1C48BCE000FF9820 /* Main.storyboard in Resources */,
 			);
@@ -135,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A31C79E1C4E098000FF9820 /* NetworkOperation.swift in Sources */,
 				8A31C78A1C48BCE000FF9820 /* ViewController.swift in Sources */,
+				8A31C79C1C49AACF00FF9820 /* CurrentWeather.swift in Sources */,
+				8A4D6C4A1C59CF2B00F86325 /* ForecastService.swift in Sources */,
 				8A31C7881C48BCE000FF9820 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +300,7 @@
 				8A31C7981C48BCE000FF9820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
